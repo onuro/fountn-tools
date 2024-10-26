@@ -21,7 +21,7 @@ export default function Edit({ attributes, setAttributes }) {
 		<Fragment>
 			<InspectorControls>
 				<PanelBody
-					title={__('Image Picker', 'naviddev-gutenberg-blocks')}
+					title={__('Image Picker', 'ftn-tools')}
 					initialOpen={true}
 				>
 					{/* <MediaUploadCheck>
@@ -45,11 +45,11 @@ export default function Edit({ attributes, setAttributes }) {
 					<img className="feature-icon" src={imageUrl} alt="feature-icon" />
 				</PanelBody>
 				<PanelBody
-					title={__('Typography', 'naviddev-gutenberg-blocks')}
+					title={__('Typography', 'ftn-tools')}
 					initialOpen={false}
 				>
 					<p className="custom__editor__label">
-						{__('Title Color', 'naviddev-gutenberg-blocks')}
+						{__('Title Color', 'ftn-tools')}
 					</p>
 					<ColorPalette
 						colors={colors}
@@ -57,7 +57,7 @@ export default function Edit({ attributes, setAttributes }) {
 						onChange={(newColor) => setAttributes({ headingColor: newColor })}
 					/>
 					<p className="custom__editor__label">
-						{__('Content Color', 'naviddev-gutenberg-blocks')}
+						{__('Content Color', 'ftn-tools')}
 					</p>
 					<ColorPalette
 						colors={colors}

@@ -8,7 +8,7 @@ class Plugin {
 	 *
 	 * @var string
 	 */
-	const PREFIX = 'naviddev-gutenberg-blocks';
+	const PREFIX = 'ftn-tools';
 
 	/**
 	 * Gettext localization domain.
@@ -60,7 +60,7 @@ class Plugin {
 	public static function gutenbergBlocksRegisterCategory($categories, $post): array {
 		return [
 			[
-				'slug'  => 'naviddev-gutenberg-blocks',
+				'slug'  => 'ftn-tools',
 				'title' => __('NavidDev Gutenberg Blocks', Plugin::L10N),
 			],
 			...$categories,
@@ -101,9 +101,9 @@ class Plugin {
 	public static function registerBlockAssets() {
 		wp_enqueue_script(
 			'gutenberg-blocks-js',
-			GUTENBERG_BLOCKS_INC_URL . 'js/variations.js',
+			FTN_TOOLS_INC_URL . 'js/variations.js',
 			['wp-blocks', 'wp-dom-ready', 'wp-edit-post'],
-			GUTENBERG_BLOCKS_VERSION,
+			FTN_TOOLS_VERSION,
 			TRUE
 		);
 	}
@@ -111,16 +111,16 @@ class Plugin {
 	public static function enqueueScripts() {
 		wp_enqueue_style(
 			'gutenberg-blocks-style',
-			GUTENBERG_BLOCKS_INC_URL . 'css/style.css',
+			FTN_TOOLS_INC_URL . 'css/style.css',
 			[],
-			GUTENBERG_BLOCKS_VERSION,
+			FTN_TOOLS_VERSION,
 			FALSE
 		);
 	}
 
 
 	public static function gutenbergCss() {
-		add_editor_style(GUTENBERG_BLOCKS_INC_URL . 'css/style.css');
+		add_editor_style(FTN_TOOLS_INC_URL . 'css/style.css');
 	}
 
 	/**

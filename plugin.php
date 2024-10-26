@@ -10,7 +10,7 @@
  * Author URI:        https://naviddev.com
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain:       naviddev-gutenberg-blocks
+ * Text Domain:       ftn-tools
  */
 
 namespace Naviddev\GutenbergBlocks;
@@ -20,9 +20,9 @@ if (!defined('ABSPATH')) {
 	exit;
 }
 
-define('GUTENBERG_BLOCKS_VERSION', '0.1.0');
-define('GUTENBERG_BLOCKS_URL', plugin_dir_url(__FILE__));
-define('GUTENBERG_BLOCKS_INC_URL', GUTENBERG_BLOCKS_URL . 'assets/');
+define('FTN_TOOLS_VERSION', '0.1.0');
+define('FTN_TOOLS_URL', plugin_dir_url(__FILE__));
+define('FTN_TOOLS_INC_URL', FTN_TOOLS_URL . 'assets/');
 
 /**
  * Loads PSR-4-style plugin classes.
